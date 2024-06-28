@@ -1,7 +1,7 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
 const path = require("path");
-const Dotenv = require('dotenv-webpack');
+const Dotenv = require("dotenv-webpack");
 
 module.exports = {
   stats: "errors-only",
@@ -71,7 +71,7 @@ module.exports = {
       ],
     }),
     new Dotenv({
-      path: './.env.local',
+      path: "./.env.local",
     }),
   ],
 };
