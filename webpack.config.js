@@ -66,7 +66,7 @@ module.exports = {
       patterns: [
         {
           from: "./node_modules/@getyoti/react-face-capture/assets",
-          to: "./src/assets",
+          to: "./assets",
         },
       ],
     }),
