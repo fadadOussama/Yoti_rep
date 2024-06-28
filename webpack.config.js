@@ -62,23 +62,14 @@ module.exports = {
       template: "public/index.html",
       favicon: "public/favicon.png",
     }),
-    // new CopyPlugin({
-    //   patterns: [
-    //     {
-    //       from: "./node_modules/@getyoti/react-face-capture/assets",
-    //       to: "./assets",
-    //     },
-    //   ],
-    // }),
-    new CopyPlugin([
-      {
-        from: path.resolve(
-          __dirname,
-          "./node_modules/@getyoti/react-face-capture/assets"
-        ),
-        to: path.resolve(__dirname, "./assets"),
-      },
-    ]),
+    new CopyPlugin({
+      patterns: [
+        {
+          from: "./node_modules/@getyoti/react-face-capture/assets",
+          to: "./assets",
+        },
+      ],
+    }),
     new Dotenv({
       path: "./.env.local",
     }),
