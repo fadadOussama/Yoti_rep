@@ -74,7 +74,7 @@ module.exports = {
       ],
     }),
     new Dotenv({
-      path: "./.env.local",
+      path: "./.env",
     }),
   ],
 };
