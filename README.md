@@ -22,7 +22,7 @@ Both `PEM_FILE_PATH` and `SDK_ID` secrets are obtained from following the instru
 
 The information required to fill the `ENDPOINT` variable can be found [here](https://developers.yoti.com/age-estimation/integration-guide). The `BASE_URL` (base URL for the service to be requested) is set in the `.env` file (check the value to fill the `ENDPOINT` field).
 
-Set the `clientSdkId` in the [FaceCapture component](https://github.com/getyoti/web-fcm-demo/blob/04738a2a43258594872c28b6bced669c6789ad49/src/App.js#L117) with `SDK_ID` value in the `.env.local` file. 
+Set the `clientSdkId` in the [FaceCapture component](https://github.com/getyoti/web-fcm-demo/blob/04738a2a43258594872c28b6bced669c6789ad49/src/App.js#L117) with `SDK_ID` value in the `.env.local` file.
 
 ## Run locally
 
@@ -30,21 +30,21 @@ This demo was designed to be run locally. To get started, follow the below steps
 
 1. Install all the dependencies:
 
-    ```bash
-    npm install
-    ```
+   ```bash
+   npm install
+   ```
 
 2. Start the server that will manage the request:
 
-    ```bash
-    node server.js
-    ```
+   ```bash
+   node server.js
+   ```
 
 3. Start the client in a different terminal window:
 
-    ```bash
-    npm start
-    ```
+   ```bash
+   npm start
+   ```
 
 Now the client is ready to use. You just need to follow the FCM instructions, take a photo and wait for the response.
 
