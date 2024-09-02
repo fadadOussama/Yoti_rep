@@ -8,6 +8,7 @@ import React, { useState } from "react";
 import { Api } from "./api/api";
 import RadioButtons from "./components/RadioButtons";
 import SecureField from "./components/SecureField";
+import YotiFaceCaptureExample from "./yotiExample";
 
 const service = new Api();
 
@@ -128,7 +129,7 @@ const App = () => {
                 onSuccess={onSuccess}
                 onError={onError}
                 secure={secureFlag}
-                // clientSdkId={process.env.SDK_ID}
+                clientSdkId={process.env.SDK_ID}
                 returnPreviewImage={true}
               />
             </div>
@@ -197,6 +198,8 @@ const App = () => {
           </div>
         )}
       </Container>
+
+      <YotiFaceCaptureExample />
     </div>
   );
 };
