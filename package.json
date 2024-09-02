@@ -22,7 +22,7 @@
   },
   "scripts": {
     "start": "webpack-dev-server --open --host 0.0.0.0 --mode development",
-    "build": "react-scripts build",
+    "build": "webpack --config webpack.config.js --mode production",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "audit": "audit-ci -c"
