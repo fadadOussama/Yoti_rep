@@ -8,7 +8,6 @@ import React, { useState } from "react";
 import { Api } from "./api/api";
 import RadioButtons from "./components/RadioButtons";
 import SecureField from "./components/SecureField";
-import YotiFaceCaptureExample from "./yotiExample";
 
 const service = new Api();
 
@@ -198,8 +197,6 @@ const App = () => {
           </div>
         )}
       </Container>
-
-      <YotiFaceCaptureExample />
     </div>
   );
 };
