@@ -130,7 +130,7 @@ const App = () => {
                 secure={secureFlag}
                 clientSdkId={process.env.SDK_ID}
                 returnPreviewImage={true}
-                faceCaptureAssetsRootUrl="../assets/face-capture"
+                faceCaptureAssetsRootUrl="../assets/face-capture/tiny_face_detector_model-weights_manifest.json"
               />
             </div>
 
